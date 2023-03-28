@@ -1,0 +1,24 @@
+[package]
+name = "coinclp-sys"
+version = "0.2.2"
+edition = "2021"
+build = "build.rs"
+license = "Apache-2.0"
+documentation = "https://docs.rs/coinclp-sys/"
+description = "The low-level bindings to the COIN-OR Clp library."
+repository = "https://github.com/Maroon502/coinclp-sys.git"
+keywords = ["coin-or", "Clp", "clp-sys", "coinclp-sys"]
+readme = "README.md"
+authors = [
+    "Maroon502<maroon502@outlook.com>"
+]
+
+[features]
+default = []
+
+[dependencies]
+clp-src = { version = "0.2", features = ["clpsolver"]}
+
+[build-dependencies]
+bindgen = "0.64"
+coin-build-tools = "0.2"
