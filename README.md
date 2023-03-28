@@ -1,4 +1,4 @@
-# Clp-src
+# CoinClp-sys
 
 [![Package][package-img]][package-url] [![Documentation][documentation-img]][documentation-url] [![License][license-img]][license-url]
 
