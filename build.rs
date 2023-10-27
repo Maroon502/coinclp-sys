@@ -16,8 +16,9 @@ fn bindgen_lib() {
     let mut header_path = String::new();
 
     for i in &include {
-        if PathBuf::from(i).join(HEADER).exists() {
-            header_path = i.to_string() +"\\" +  HEADER;
+        let path = PathBuf::from(i).join(HEADER);
+        if path.exists() {
+            header_path = path.display().to_string();
             break;
         }
     }
@@ -30,7 +31,7 @@ fn bindgen_lib() {
         .collect::<Vec<String>>();
 
     let bindings = bindgen::Builder::default()
-        .header(&header_path)
+        .header(header_path)
         .clang_args(clang_args.iter())
         .trust_clang_mangling(false)
         .generate()
