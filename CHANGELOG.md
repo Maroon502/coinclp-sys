@@ -8,10 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.5](https://github.com/Maroon502/coinclp-sys/compare/v0.2.4...v0.2.5) - 2023-10-27
 
-### Other
-- Update CI
-- *(deps)* bump actions/checkout from 3 to 4
-- Update CI
+### Fix
+- Fix errors in compilation
 
 ## [0.2.4](https://github.com/Maroon502/coinclp-sys/compare/v0.2.3...v0.2.4) - 2023-10-27
 
