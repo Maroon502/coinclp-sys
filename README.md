@@ -2,21 +2,23 @@
 
 [![Package][package-img]][package-url] [![Documentation][documentation-img]][documentation-url] [![License][license-img]][license-url]
 
-coinclp-sys crate is a *-sys crate. The package provides Low-level bindings to the [Clp] library.
+`coinclp-sys` crate is a *-sys crate. The package provides Low-level bindings to the [Clp] library.
 
 By this package, you don't need to worry about installing Clp in the system, and it's a package for **all platforms**.
 
 Clp (Coin-or linear programming) is an open-source linear programming solver. It is primarily meant to be used as a callable library, but a basic, stand-alone executable version is also available.
 
 ## Usage
+
 Just add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-coinclp-sys = "0.2"
+coinclp-sys = "\*"
 ```
 
 ## Library Linking
+
 if you want to know the detail about how it compile or link the Clp, please see [Clp-src].
 
 ## Contribution
