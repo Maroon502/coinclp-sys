@@ -20,5 +20,5 @@ default = []
 clp-src = { version = "0.2", features = ["clpsolver"]}
 
 [build-dependencies]
-bindgen = "0.69"
+bindgen = "0.70"
 coin-build-tools = "0.2"
